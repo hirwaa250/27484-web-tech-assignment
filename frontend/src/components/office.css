@@ -1,0 +1,124 @@
+.offices-page {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 32px 16px;
+  color: #d7dbe5;
+  background: #17181d;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.offices-content {
+  width: min(760px, 100%);
+  margin: 0 auto;
+}
+
+.offices-header {
+  margin-bottom: 20px;
+}
+
+.offices-header p {
+  margin: 0 0 4px;
+  color: #969eae;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+}
+
+.offices-header h1 {
+  margin: 0 0 22px;
+  color: #f1f2f5;
+  font-size: clamp(32px, 6vw, 48px);
+  font-weight: 600;
+}
+
+.office-search {
+  margin: 0 auto;
+}
+
+.office-search label {
+  margin-right: 8px;
+  color: #c0c5d0;
+  font-size: 15px;
+}
+
+.office-search-controls {
+  display: inline-flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.office-search input {
+  width: min(260px, 55vw);
+  box-sizing: border-box;
+  padding: 7px 9px;
+  border: 1px solid #737a87;
+  border-radius: 3px;
+  color: #f1f2f5;
+  background: #24262d;
+  font: inherit;
+}
+
+.office-search button,
+.office-table button,
+.office-status button {
+  padding: 7px 11px;
+  border: 1px solid #737a87;
+  border-radius: 3px;
+  color: #f1f2f5;
+  background: #383b43;
+  cursor: pointer;
+  font: inherit;
+}
+
+.office-search button:hover,
+.office-table button:hover:not(:disabled),
+.office-status button:hover {
+  background: #4a4e58;
+}
+
+.office-table-container {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.office-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  color: #d7dbe5;
+  text-align: center;
+}
+
+.office-table th,
+.office-table td {
+  padding: 9px 12px;
+  border: 1px solid #858b96;
+  white-space: nowrap;
+}
+
+.office-table th {
+  color: #f1f2f5;
+  background: #24262d;
+  font-weight: 600;
+}
+
+.office-table button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.office-status {
+  margin: 18px 0;
+  color: #c0c5d0;
+}
+
+@media (max-width: 560px) {
+  .offices-page {
+    padding: 24px 12px;
+  }
+
+  .office-search label {
+    display: block;
+    margin: 0;
+  }
+}
